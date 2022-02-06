@@ -94,7 +94,7 @@ public class GerenciarLogin extends HttpServlet {
     public static Usuario verificarAcesso(HttpServletRequest request, HttpServletResponse response) throws IOException{
         GerenciarLogin.response= response;
         PrintWriter out = response.getWriter();
-        Usuario usuario= null;
+        Usuario usuario=(Usuario) request.getAttribute("usuario");
         
         try {
             HttpSession sessao = request.getSession();

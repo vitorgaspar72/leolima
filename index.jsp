@@ -4,6 +4,8 @@
     Author     : Arthur 
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="model.Usuario"%>
+<%@page import="control.GerenciarLogin" %>
 
 <!DOCTYPE html>
 <html style="font-size: 16px;">
